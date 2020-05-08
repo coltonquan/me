@@ -1,14 +1,11 @@
 .side-menu {
     border: 1px solid grey;
     width: 279px;
-    /* display: block; */
-    /* min-height: 100vh; */
     top: 0px;
     bottom: 0px;
     position: fixed;
     overflow-y: auto;
     background-color: white;
-    visibility: hidden;
 }
 
 .side-menu-name {
@@ -37,4 +34,10 @@
 
 .side-menu-entry:hover {
     background-color: whitesmoke;
+}
+
+@media only screen and (max-width: 1600px) {
+    .side-menu {
+        visibility: hidden;
+    }
 }
