@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/me/static/css/main.71aefd1d.chunk.css",
+    "main.css": "/me/static/css/main.d468b796.chunk.css",
     "main.js": "/me/static/js/main.ca18572f.chunk.js",
     "main.js.map": "/me/static/js/main.ca18572f.chunk.js.map",
     "runtime-main.js": "/me/static/js/runtime-main.bb374198.js",
@@ -8,9 +8,9 @@
     "static/js/2.d7ee3354.chunk.js": "/me/static/js/2.d7ee3354.chunk.js",
     "static/js/2.d7ee3354.chunk.js.map": "/me/static/js/2.d7ee3354.chunk.js.map",
     "index.html": "/me/index.html",
-    "precache-manifest.495bb51f2a1204f2638f0469d2bb47cf.js": "/me/precache-manifest.495bb51f2a1204f2638f0469d2bb47cf.js",
+    "precache-manifest.a0db5d67095bcef0b81d8e73e7cc6e3a.js": "/me/precache-manifest.a0db5d67095bcef0b81d8e73e7cc6e3a.js",
     "service-worker.js": "/me/service-worker.js",
-    "static/css/main.71aefd1d.chunk.css.map": "/me/static/css/main.71aefd1d.chunk.css.map",
+    "static/css/main.d468b796.chunk.css.map": "/me/static/css/main.d468b796.chunk.css.map",
     "static/js/2.d7ee3354.chunk.js.LICENSE.txt": "/me/static/js/2.d7ee3354.chunk.js.LICENSE.txt",
     "static/media/color-fast-tap-0.jpg": "/me/static/media/color-fast-tap-0.26b777bb.jpg",
     "static/media/color-fast-tap-1.jpg": "/me/static/media/color-fast-tap-1.a1f4dc6f.jpg",
@@ -26,7 +26,7 @@
   "entrypoints": [
     "static/js/runtime-main.bb374198.js",
     "static/js/2.d7ee3354.chunk.js",
-    "static/css/main.71aefd1d.chunk.css",
+    "static/css/main.d468b796.chunk.css",
     "static/js/main.ca18572f.chunk.js"
   ]
 }
