@@ -8,8 +8,9 @@ export function Media(props) {
     const mediaStr = props.media
     const currentMedia = getMedia(mediaStr)
     const currentMediaElement = isVideo(mediaStr) ?
-        <Video video={currentMedia} /> :
+        <Video video={currentMedia} height={props.height} /> :
         <img className="media-demo"
+            style={{ height: props.height != null ? props.height : '512px' }}
             src={currentMedia}
             alt=""></img>
     return currentMediaElement
@@ -45,6 +46,7 @@ export class Video extends React.Component {
         return (
             <video autoPlay muted loop
                 className="media-demo"
+                style={{ height: this.props.height != null ? this.props.height : '512px' }}
                 ref={(videoElement) => { this.videoElement = videoElement }}>
                 <source src={this.props.video} type="video/mp4"></source>
             </video>
@@ -86,7 +88,7 @@ export class SlideShow extends React.Component {
                     onClick={() => this.handleDotClick(index)}
                     style={{ color: fontColor }}>
                     &#8226;
-            </p>
+                </p>
             )
         })
         return <div className="dots-container">

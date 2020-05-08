@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import { NavBar } from './navbar';
 import { SideMenu } from './side-menu'
 import { Project } from './project';
 import { ITEMSLIST, ABOUT, TITLE } from './constants';
@@ -12,9 +11,10 @@ class Main extends React.Component {
   render() {
     const projectElements = ITEMSLIST.map((projectDict, index) => {
       return (
-        <Project
-          key={index}
-          {...projectDict} />
+        <div key={index}>
+          <Project
+            {...projectDict} />
+        </div>
       )
     })
 

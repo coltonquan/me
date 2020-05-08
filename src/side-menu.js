@@ -91,14 +91,14 @@ export class SideMenu extends React.Component {
                         size='2x' />
                 </div>
                 <div className="side-menu" style={{ visibility: this.state.sideMenuVisibility ? 'visible' : 'hidden' }} >
-                    <div className="side-menu-name" onClick={() => {this.scrollToTop(); this.onClickEntry()}} >Colton Quan</div>
+                    <div className="side-menu-name" onClick={() => { this.scrollToTop(); this.onClickEntry() }} >Colton Quan</div>
                     <hr style={{ marginTop: '0px' }} />
                     <div style={{ paddingTop: '16px' }} >
                         <SideMenuItem name='Mobile' onClick={this.onClickEntry} entries={['Color Fast Tap', 'TappaDabba', 'Bit Feather', 'Number Tap']} />
                     </div>
                     <SideMenuItem name='Web Extensions' onClick={this.onClickEntry} entries={['Webbie', 'Calendar Notes']} />
                     <SideMenuItem name='Virtual Reality' onClick={this.onClickEntry} entries={['Main Mall Hustle', 'Dream Not Scream']} />
-                    <SideMenuItem name='Work Experience' onClick={this.onClickEntry} entries={['Zynga', 'FISPAN', 'Visier', 'UBC']} />
+                    <SideMenuItem name='Work Experience' onClick={this.onClickEntry} entries={['FISPAN', 'Visier', 'UBC']} />
                     <Link
                         to='About'
                         smooth={true}

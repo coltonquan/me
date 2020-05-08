@@ -3,13 +3,13 @@ import { Media } from './media'
 import { Element } from 'react-scroll'
 import './project.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faArrowUp } from '@fortawesome/free-solid-svg-icons'
 
 export class Project extends React.Component {
     createLinks() {
         const linkElements = this.props.linkDictList.map((linkDict, index) => {
             return (
                 <a
+                    key={index}
                     className='link-wrapper'
                     target="_blank"
                     rel="noopener noreferrer"

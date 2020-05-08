@@ -42,7 +42,7 @@ export const ITEMSLIST = [
                 link: "https://github.com/coltonquan/TappaDabba",
                 text: "View on Github"
             }],
-        media: "color-fast-tap.mp4"
+        media: "tappadabba.mp4"
     },
     {
         icon: "color-fast-tap-icon.webp",
@@ -60,7 +60,8 @@ export const ITEMSLIST = [
                 link: "https://github.com/coltonquan/BitFeather",
                 text: "View on Github"
             }],
-        media: "color-fast-tap.mp4"
+        media: "bit-feather.mp4",
+        height: '380px'
     },
 
     {
@@ -79,7 +80,7 @@ export const ITEMSLIST = [
                 link: "https://github.com/coltonquan/NumberTap",
                 text: "View on Github"
             }],
-        media: "color-fast-tap.mp4"
+        media: "number-tap.mp4"
     },
     {
         icon: "color-fast-tap-icon.webp",
@@ -97,7 +98,7 @@ export const ITEMSLIST = [
                 link: "https://github.com/coltonquan/webbie",
                 text: "View on Github"
             }],
-        media: "color-fast-tap.mp4"
+        media: "webbie.mp4"
     },
 
     {
@@ -116,7 +117,8 @@ export const ITEMSLIST = [
                 link: "https://github.com/coltonquan/calendar-notes",
                 text: "View on Github"
             }],
-        media: "color-fast-tap.mp4"
+        media: "calendar-notes.mp4",
+        height: '550px'
     },
 
     {
@@ -135,7 +137,8 @@ export const ITEMSLIST = [
                 link: "http://eml.ubc.ca/projects/main-mall-hustle/",
                 text: "Learn More on UBC's Website"
             }],
-        media: "color-fast-tap.mp4"
+        media: "main-mall-hustle.webp",
+        height: '450px'
     },
     {
         icon: "color-fast-tap-icon.webp",
@@ -148,19 +151,20 @@ export const ITEMSLIST = [
                 link: "https://devpost.com/software/dream-not-scream",
                 text: "Learn More on Devpost"
             }],
-        media: "color-fast-tap.mp4"
+        media: "dream-not-scream.jpg",
+        height: '450px'
     },
 
 
-    {
-        icon: "color-fast-tap-icon.webp",
-        title: "Zynga",
-        subtitle: "A simple yet challenging color matching game.",
-        text: "Match as many colors as you can before time runs out, but be careful: match a color incorrectly and it's game over! Play solo and break your personal best, or challenge your friends for the top score!",
-        linkDictList: [
-        ],
-        media: "color-fast-tap.mp4"
-    },
+    // {
+    //     icon: "color-fast-tap-icon.webp",
+    //     title: "Zynga",
+    //     subtitle: "A simple yet challenging color matching game.",
+    //     text: "Match as many colors as you can before time runs out, but be careful: match a color incorrectly and it's game over! Play solo and break your personal best, or challenge your friends for the top score!",
+    //     linkDictList: [
+    //     ],
+    //     media: "color-fast-tap.mp4"
+    // },
     {
         icon: "color-fast-tap-icon.webp",
         title: "FISPAN",
