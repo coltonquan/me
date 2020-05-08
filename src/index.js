@@ -23,10 +23,7 @@ class Main extends React.Component {
         {/* <NavBar /> */}
         <SideMenu />
         <Title {...TITLE} />
-        <div style={{
-          textAlign: 'justify',
-          marginLeft: '400px'
-        }} >
+        <div className='projects-wrapper'>
           {projectElements}
           <Element name="About">
             <Project {...ABOUT} />

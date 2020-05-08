@@ -1,5 +1,6 @@
 import React from 'react';
 import './project.css'
+import './index.css'
 import { Element } from 'react-scroll'
 import { Media } from './media';
 
@@ -10,9 +11,7 @@ export class Title extends React.Component {
             <div style={{
                 backgroundColor: '#202124',
             }}>
-                <div style={{
-                    marginLeft: '400px'
-                }}>
+                <div className='title-wrapper'>
                     <div className={`project dark`} >
                         <Element name={this.props.title}>
                             <h1>{this.props.title}</h1>

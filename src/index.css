@@ -26,3 +26,22 @@ h2 {
   font-weight: normal;
   font-size: 20px;
 }
+
+.title-wrapper {
+  margin-left: 400px;
+}
+
+.projects-wrapper {
+  text-align: justify;
+  margin-left: 400px;
+}
+
+@media only screen and (max-width: 1600px) {
+  .projects-wrapper {
+    margin-left: 48px;
+  }
+
+  .title-wrapper {
+    margin-left: 48px;
+  }
+}
