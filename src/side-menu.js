@@ -2,6 +2,9 @@ import React from 'react';
 import { Link, animateScroll } from 'react-scroll';
 import './side-menu.css'
 import { SCROLL_DURATION } from './constants'
+import { faBars } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { isSmallScreen } from './utils'
 
 
 class SideMenuItem extends React.Component {
@@ -26,7 +29,7 @@ class SideMenuItem extends React.Component {
                     to={entryName}
                     smooth={true}
                     duration={SCROLL_DURATION} >
-                    <div className="side-menu-entry" style={{ display: this.state.isShowing ? 'block' : 'none' }}  >
+                    <div className="side-menu-entry" onClick={this.props.onClick} style={{ display: this.state.isShowing ? 'block' : 'none' }}  >
                         {entryName}
                     </div>
                 </Link>
@@ -44,6 +47,36 @@ class SideMenuItem extends React.Component {
 }
 
 export class SideMenu extends React.Component {
+    constructor(props) {
+        super(props)
+        this.state = {
+            sideMenuVisibility: !isSmallScreen(),
+            hamburgerVisbility: isSmallScreen()
+        }
+        this.onClickHamburger = this.onClickHamburger.bind(this)
+        this.onClickEntry = this.onClickEntry.bind(this)
+    }
+
+    onClickHamburger() {
+        this.setState({ sideMenuVisibility: !this.state.sideMenuVisibility })
+    }
+
+    onClickEntry() {
+        if (isSmallScreen())
+            this.setState({ sideMenuVisibility: false })
+    }
+
+    componentDidMount() {
+        window.addEventListener("resize", this.resize.bind(this));
+        this.resize();
+    }
+
+    resize() {
+        this.setState({
+            sideMenuVisibility: !isSmallScreen(),
+            hamburgerVisbility: isSmallScreen()
+        });
+    }
 
     scrollToTop() {
         animateScroll.scrollToTop()
@@ -51,21 +84,30 @@ export class SideMenu extends React.Component {
 
     render() {
         return (
-            <div className="side-menu">
-                <div className="side-menu-name" onClick={() => this.scrollToTop()} >Colton Quan</div>
-                <hr style={{ marginTop: '0px' }} />
-                <div style={{ paddingTop: '16px' }} >
-                    <SideMenuItem name='Mobile' entries={['Color Fast Tap', 'TappaDabba', 'Bit Feather', 'Number Tap']} />
+            <div>
+                <div className='hamburger-icon' onClick={this.onClickHamburger} style={{ visibility: this.state.hamburgerVisbility ? 'visible' : 'hidden' }} >
+                    <FontAwesomeIcon
+                        icon={faBars}
+                        size='2x' />
                 </div>
-                <SideMenuItem name='Web Extensions' entries={['Webbie', 'Calendar Notes']} />
-                <SideMenuItem name='Virtual Reality' entries={['Main Mall Hustle', 'Dream Not Scream']} />
-                <SideMenuItem name='Work Experience' entries={['Zynga', 'FISPAN', 'Visier', 'UBC']} />
-                <Link
-                    to='About'
-                    smooth={true}
-                    duration={SCROLL_DURATION}>
-                    <div className="side-menu-item">About</div>
-                </Link>
+                <div className="side-menu" style={{ visibility: this.state.sideMenuVisibility ? 'visible' : 'hidden' }} >
+                    <div className="side-menu-name" onClick={() => {this.scrollToTop(); this.onClickEntry()}} >Colton Quan</div>
+                    <hr style={{ marginTop: '0px' }} />
+                    <div style={{ paddingTop: '16px' }} >
+                        <SideMenuItem name='Mobile' onClick={this.onClickEntry} entries={['Color Fast Tap', 'TappaDabba', 'Bit Feather', 'Number Tap']} />
+                    </div>
+                    <SideMenuItem name='Web Extensions' onClick={this.onClickEntry} entries={['Webbie', 'Calendar Notes']} />
+                    <SideMenuItem name='Virtual Reality' onClick={this.onClickEntry} entries={['Main Mall Hustle', 'Dream Not Scream']} />
+                    <SideMenuItem name='Work Experience' onClick={this.onClickEntry} entries={['Zynga', 'FISPAN', 'Visier', 'UBC']} />
+                    <Link
+                        to='About'
+                        smooth={true}
+                        duration={SCROLL_DURATION}>
+                        <div className="side-menu-item" onClick={this.onClickEntry}>About</div>
+                    </Link>
+                </div>
+                <div className='screen' onClick={this.onClickEntry} style={{ visibility: isSmallScreen() && this.state.sideMenuVisibility ? 'visible' : 'hidden' }} >
+                </div>
             </div>
         )
     }

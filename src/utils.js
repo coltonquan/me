@@ -18,7 +18,7 @@ export function isVideo(str) {
     return false
 }
 
-export function isBigScreen() {
-    const mediaDict = window.matchMedia("only screen and (min-width: 688px)")
+export function isSmallScreen() {
+    const mediaDict = window.matchMedia("only screen and (max-width: 1160px)")
     return mediaDict.matches
 }
