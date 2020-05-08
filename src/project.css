@@ -1,0 +1,49 @@
+.project {
+    max-width: 760px;
+}
+
+.link-wrapper {
+    color: black;
+    text-decoration: none;
+}
+
+.link-text {
+    color: blue;
+    text-decoration: none;
+    margin: auto 12px;
+    align-items: center;    
+
+}
+
+.link-icon {
+    margin: 16px;
+}
+
+.link-container {
+    display: flex;
+    box-shadow: 0 0 3px #888888;    
+    text-align: left;
+    align-items: center;
+    margin-right: 16px;
+    margin-bottom: 16px;
+    border-radius: 3px;
+}
+
+.link-container:hover {
+    background-color: whitesmoke;
+}
+
+.divider {
+    border-left: 1px solid lightgray;
+    height: 44px;
+}
+
+
+.links-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.dark {
+    color: white;
+}

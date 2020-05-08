@@ -1,0 +1,34 @@
+:root {
+    --navbar-element-margin: 16px 0px 16px 16px;
+    --navbar-item-margin: 16px 16px 16px 0px;
+    --navbar-item-font-size: 16px;
+    --navbar-name-font-size: 18px;
+}
+
+.navbar {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+  
+.navbar-name {
+    margin: var(--navbar-element-margin);
+    font-weight: bold;
+    font-size: var(--navbar-name-font-size);
+    transition: 0.4s;
+}
+
+.navbar-item {
+    margin: var(--navbar-item-margin);
+    font-size: var(--navbar-item-font-size);
+}
+
+.navbar-space {
+    flex: 1;
+}

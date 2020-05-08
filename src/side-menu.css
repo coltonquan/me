@@ -1,0 +1,39 @@
+.side-menu {
+    border: 1px solid grey;
+    width: 279px;
+    /* display: block; */
+    /* min-height: 100vh; */
+    top: 0px;
+    bottom: 0px;
+    position: fixed;
+    overflow-y: auto;
+    background-color: white;
+}
+
+.side-menu-name {
+    font-weight: bold;
+    font-size: 18px;
+    padding: 16px;
+    padding-left: 24px;
+    cursor: pointer;
+}
+
+.side-menu-item {
+    padding: 12px;
+    padding-left: 24px;
+    cursor: pointer;
+}
+
+.side-menu-entry {
+    padding: 12px;
+    padding-left: 48px;
+    cursor: pointer;
+}
+
+.side-menu-item:hover {
+    background-color: whitesmoke;
+}
+
+.side-menu-entry:hover {
+    background-color: whitesmoke;
+}
