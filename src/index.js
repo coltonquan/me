@@ -1,17 +1,43 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import { NavBar } from './navbar';
+import { SideMenu } from './side-menu'
+import { Project } from './project';
+import { ITEMSLIST, ABOUT, TITLE } from './constants';
+import { Element } from 'react-scroll'
+import { Title } from './title';
+
+class Main extends React.Component {
+  render() {
+    const projectElements = ITEMSLIST.map((projectDict, index) => {
+      return (
+        <Project
+          key={index}
+          {...projectDict} />
+      )
+    })
+
+    return (
+      <div>
+        {/* <NavBar /> */}
+        <SideMenu />
+        <Title {...TITLE} />
+        <div style={{
+          textAlign: 'justify',
+          marginLeft: '400px'
+        }} >
+          {projectElements}
+          <Element name="About">
+            <Project {...ABOUT} />
+          </Element>
+        </div>
+      </div>
+    )
+  }
+}
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <Main />,
   document.getElementById('root')
 );
-
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
