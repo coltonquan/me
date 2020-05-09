@@ -175,7 +175,7 @@ export const ITEMSLIST = [
         text: "Match as many colors as you can before time runs out, but be careful: match a color incorrectly and it's game over! Play solo and break your personal best, or challenge your friends for the top score!",
         linkDictList: [
         ],
-        media: "color-fast-tap.mp4"
+        media: "fispan.jpg"
     },
 
     {
@@ -185,7 +185,7 @@ export const ITEMSLIST = [
         text: "Match as many colors as you can before time runs out, but be careful: match a color incorrectly and it's game over! Play solo and break your personal best, or challenge your friends for the top score!",
         linkDictList: [
         ],
-        media: "color-fast-tap.mp4"
+        media: "visier.jpg"
     },
 
     {
@@ -195,7 +195,7 @@ export const ITEMSLIST = [
         text: "Match as many colors as you can before time runs out, but be careful: match a color incorrectly and it's game over! Play solo and break your personal best, or challenge your friends for the top score!",
         linkDictList: [
         ],
-        media: "color-fast-tap.mp4"
+        media: "ubc.jpg"
     },
 ]
 
@@ -254,5 +254,6 @@ export const ABOUT = {
             link: "mailto:coltonquan@gmail.com",
             text: "Send me an Email"
         }],
-    media: "colton-0.jpg"
+    media: "profile-picture.jpg",
+    height: '512px'
 }
