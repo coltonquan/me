@@ -1,19 +1,19 @@
 .media-demo {
-    width: auto;
     /* height: 512px; */
     display: block;
     margin: 48px auto;
+
     border-width: 2px;
     border-style: solid;
     border-color: black;
     border-radius: 5px;
+
     max-width: 100%;
 }
 
 @media only screen and (max-width: 1160px) {
     .media-demo {
-        max-width: 100%;
-        height: auto;
+        /* height: auto; */
         /* max-height: 512px; */
         /* border: 0px; */
     }

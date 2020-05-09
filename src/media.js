@@ -10,8 +10,7 @@ export function Media(props) {
     const currentMediaElement = isVideo(mediaStr) ?
         <Video video={currentMedia} height={props.height} /> :
         <img className="media-demo"
-        style={{ height: isSmallScreen() ? 'auto' : 'auto', marginRight: '48px' }}
-            // style={{ height: isSmallScreen() ? 'auto' : (props.height != null ? props.height : '512px') }}
+            style={{ maxHeight: props.height }}
             src={currentMedia}
             alt=""></img>
     return currentMediaElement
@@ -47,7 +46,7 @@ export class Video extends React.Component {
         return (
             <video autoPlay muted loop
                 className="media-demo"
-                style={{ height: this.props.height != null ? this.props.height : 'auto' }}
+                style={{ maxHeight: this.props.height }}
                 ref={(videoElement) => { this.videoElement = videoElement }}>
                 <source src={this.props.video} type="video/mp4"></source>
             </video>
