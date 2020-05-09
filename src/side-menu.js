@@ -94,7 +94,7 @@ export class SideMenu extends React.Component {
                     <div className="side-menu-name" onClick={() => { this.scrollToTop(); this.onClickEntry() }} >Colton Quan</div>
                     <hr style={{ marginTop: '0px' }} />
                     <div style={{ paddingTop: '16px' }} >
-                        <SideMenuItem name='Mobile' onClick={this.onClickEntry} entries={['Color Fast Tap', 'TappaDabba', 'Bit Feather', 'Number Tap']} />
+                        <SideMenuItem name='Mobile' onClick={this.onClickEntry} entries={['Color Fast Tap', 'Tappa Dabba', 'Bit Feather', 'Number Tap']} />
                     </div>
                     <SideMenuItem name='Web Extensions' onClick={this.onClickEntry} entries={['Webbie', 'Calendar Notes']} />
                     <SideMenuItem name='Virtual Reality' onClick={this.onClickEntry} entries={['Main Mall Hustle', 'Dream Not Scream']} />

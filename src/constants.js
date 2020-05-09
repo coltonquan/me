@@ -28,7 +28,7 @@ export const ITEMSLIST = [
 
     {
         icon: "color-fast-tap-icon.webp",
-        title: "TappaDabba",
+        title: "Tappa Dabba",
         subtitle: "A simple yet challenging color matching game.",
         text: "Match as many colors as you can before time runs out, but be careful: match a color incorrectly and it's game over! Play solo and break your personal best, or challenge your friends for the top score!",
         linkDictList: [

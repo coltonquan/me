@@ -20,7 +20,6 @@ class Main extends React.Component {
 
     return (
       <div>
-        {/* <NavBar /> */}
         <SideMenu />
         <Title {...TITLE} />
         <div className='projects-wrapper'>

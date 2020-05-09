@@ -1,0 +1,23 @@
+.title-wrapper {
+    padding-top: 200px;
+    margin-left: 400px;
+    /* padding-right: 48px; */
+    padding-bottom: 256px;
+    background-color: #202124;
+}
+
+.title-wrapper-wrapper {
+    background-color: #202124;
+}
+
+.title-link {
+    color: lightcyan;
+    text-decoration: none;  
+
+}
+
+@media only screen and (max-width: 1160px) {
+    .title-wrapper {
+        margin-left: 48px;
+    }
+}
