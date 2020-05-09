@@ -1,5 +1,5 @@
 import React from 'react';
-import { getMedia, isVideo } from './utils'
+import { getMedia, isVideo, isSmallScreen } from './utils'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons'
 import './media.css'
@@ -10,7 +10,8 @@ export function Media(props) {
     const currentMediaElement = isVideo(mediaStr) ?
         <Video video={currentMedia} height={props.height} /> :
         <img className="media-demo"
-            style={{ height: props.height != null ? props.height : '512px' }}
+        style={{ height: isSmallScreen() ? 'auto' : 'auto', marginRight: '48px' }}
+            // style={{ height: isSmallScreen() ? 'auto' : (props.height != null ? props.height : '512px') }}
             src={currentMedia}
             alt=""></img>
     return currentMediaElement
@@ -46,7 +47,7 @@ export class Video extends React.Component {
         return (
             <video autoPlay muted loop
                 className="media-demo"
-                style={{ height: this.props.height != null ? this.props.height : '512px' }}
+                style={{ height: this.props.height != null ? this.props.height : 'auto' }}
                 ref={(videoElement) => { this.videoElement = videoElement }}>
                 <source src={this.props.video} type="video/mp4"></source>
             </video>

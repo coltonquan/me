@@ -23,7 +23,8 @@ export const ITEMSLIST = [
                 link: "https://github.com/coltonquan/ColorFastTap",
                 text: "View on Github"
             }],
-        media: "color-fast-tap.mp4"
+        media: "color-fast-tap.mp4",
+        height: '512px'
     },
 
     {
@@ -42,7 +43,8 @@ export const ITEMSLIST = [
                 link: "https://github.com/coltonquan/TappaDabba",
                 text: "View on Github"
             }],
-        media: "tappadabba.mp4"
+        media: "tappadabba.mp4",
+        height: '512px'
     },
     {
         icon: "color-fast-tap-icon.webp",
@@ -60,8 +62,7 @@ export const ITEMSLIST = [
                 link: "https://github.com/coltonquan/BitFeather",
                 text: "View on Github"
             }],
-        media: "bit-feather.mp4",
-        height: '380px'
+        media: "bit-feather.mp4"
     },
 
     {
@@ -80,7 +81,8 @@ export const ITEMSLIST = [
                 link: "https://github.com/coltonquan/NumberTap",
                 text: "View on Github"
             }],
-        media: "number-tap.mp4"
+        media: "number-tap.mp4",
+        height: '512px'
     },
     {
         icon: "color-fast-tap-icon.webp",
@@ -98,7 +100,8 @@ export const ITEMSLIST = [
                 link: "https://github.com/coltonquan/webbie",
                 text: "View on Github"
             }],
-        media: "webbie.mp4"
+        media: "webbie.mp4",
+        height: '512px'
     },
 
     {
@@ -118,7 +121,7 @@ export const ITEMSLIST = [
                 text: "View on Github"
             }],
         media: "calendar-notes.mp4",
-        height: '550px'
+        // height: '400px'
     },
 
     {
@@ -138,7 +141,7 @@ export const ITEMSLIST = [
                 text: "Learn More on UBC's Website"
             }],
         media: "main-mall-hustle.webp",
-        height: '450px'
+        // height: '450px'
     },
     {
         icon: "color-fast-tap-icon.webp",
@@ -152,7 +155,7 @@ export const ITEMSLIST = [
                 text: "Learn More on Devpost"
             }],
         media: "dream-not-scream.jpg",
-        height: '450px'
+        // height: '450px'
     },
 
 
