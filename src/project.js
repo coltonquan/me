@@ -33,13 +33,15 @@ export class Project extends React.Component {
     }
 
     render() {
+        const caption = this.props.caption != null ? <div className='caption'>{this.props.caption}</div> : <div></div>
         return (
             <div className="project" >
                 <Element name={this.props.title}>
                     <h1>{this.props.title}</h1>
                     <h2>{this.props.subtitle}</h2>
                     {Media(this.props)}
-                    <p>{this.props.text}</p>
+                    {caption}
+                    <p className='project-text'>{this.props.text}</p>
                     {this.createLinks()}
                     <hr></hr>
                 </Element>

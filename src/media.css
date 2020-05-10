@@ -2,7 +2,8 @@
     /* height: 512px; */
     display: block;
     margin: 48px auto;
-
+    margin-bottom: 0px;
+    
     border-width: 2px;
     border-style: solid;
     border-color: black;

@@ -120,8 +120,7 @@ export const ITEMSLIST = [
                 link: "https://github.com/coltonquan/calendar-notes",
                 text: "View on Github"
             }],
-        media: "calendar-notes.mp4",
-        // height: '400px'
+        media: "calendar-notes.mp4"
     },
 
     {
@@ -140,8 +139,8 @@ export const ITEMSLIST = [
                 link: "http://eml.ubc.ca/projects/main-mall-hustle/",
                 text: "Learn More on UBC's Website"
             }],
-        media: "main-mall-hustle.webp",
-        // height: '450px'
+        media: "main-mall-hustle.mp4",
+        height: '512px'
     },
     {
         icon: "color-fast-tap-icon.webp",
@@ -154,8 +153,7 @@ export const ITEMSLIST = [
                 link: "https://devpost.com/software/dream-not-scream",
                 text: "Learn More on Devpost"
             }],
-        media: "dream-not-scream.jpg",
-        // height: '450px'
+        media: "dream-not-scream.jpg"
     },
 
 
@@ -175,7 +173,8 @@ export const ITEMSLIST = [
         text: "Match as many colors as you can before time runs out, but be careful: match a color incorrectly and it's game over! Play solo and break your personal best, or challenge your friends for the top score!",
         linkDictList: [
         ],
-        media: "fispan.jpg"
+        media: "fispan.jpg",
+        caption: "A group picture of FISPAN's Winter 2020 interns (Jan. 2020)"
     },
 
     {
@@ -185,7 +184,8 @@ export const ITEMSLIST = [
         text: "Match as many colors as you can before time runs out, but be careful: match a color incorrectly and it's game over! Play solo and break your personal best, or challenge your friends for the top score!",
         linkDictList: [
         ],
-        media: "visier.jpg"
+        media: "visier.JPG",
+        caption: "A few Visier interns and I working very diligently (May 2019)"
     },
 
     {

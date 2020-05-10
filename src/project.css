@@ -47,3 +47,14 @@
 .dark {
     color: white;
 }
+
+.caption {
+    font-size: 12px;
+    margin-top: 12px;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+.project-text {
+    margin-top: 40px;
+}

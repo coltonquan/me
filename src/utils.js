@@ -1,4 +1,4 @@
-const MEDIA = importAll(require.context('./media', false, /\.(png|jpe?g|svg|webp|mp4)$/));
+const MEDIA = importAll(require.context('./media', false, /\.(png|jpe?g|svg|webp|mp4|JPE?G)$/));
 
 function importAll(r) {
     let media = {};
