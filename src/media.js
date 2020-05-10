@@ -1,5 +1,5 @@
 import React from 'react';
-import { getMedia, isVideo, isSmallScreen } from './utils'
+import { getMedia, isVideo } from './utils'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons'
 import './media.css'
