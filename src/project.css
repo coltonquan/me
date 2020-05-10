@@ -57,4 +57,10 @@
 
 .project-text {
     margin-top: 40px;
+    margin-bottom: 24px;
+}
+
+.text-link {
+    text-decoration: none;
+    color: blue;
 }
