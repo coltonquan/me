@@ -2,10 +2,9 @@ import React from 'react';
 import { Link, animateScroll } from 'react-scroll';
 import './side-menu.css'
 import { SCROLL_DURATION } from './constants'
-import { faBars } from '@fortawesome/free-solid-svg-icons'
+import { faBars, faCaretRight } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { isSmallScreen } from './utils'
-
 
 class SideMenuItem extends React.Component {
     constructor(props) {
@@ -38,6 +37,7 @@ class SideMenuItem extends React.Component {
         return (
             <div>
                 <div className="side-menu-item" onClick={this.handleClick} >
+                    <FontAwesomeIcon icon={faCaretRight} rotation={this.state.isShowing ? 90 : 0} style={{marginRight: '10px'}} />
                     {this.props.name}
                 </div>
                 {itemEntries}

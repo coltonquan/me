@@ -21,6 +21,8 @@
     padding: 12px;
     padding-left: 24px;
     cursor: pointer;
+    display: flex;
+    align-items: center;
 }
 
 .side-menu-entry {
