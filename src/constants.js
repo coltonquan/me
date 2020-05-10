@@ -203,7 +203,7 @@ export const ABOUT = {
     icon: "color-fast-tap-icon.webp",
     title: "About Me",
     subtitle: "Self-driven, eager to learn, and passionate about computer science.",
-    text: <div>Hello! I'm a 3rd year computer science student at UBC, who is self-driven, eager to learn, and passionate about computer programming. Ever since I started programming in high school, I was always striving to explore new tools and technologies, from individual technical endeavours, to collaborative hackathon projects, to work experience in industry. Feel free to check out my <a
+    text: <div>Hello! I'm a 3rd year computer science student at UBC, from Vancouver, Canada. Ever since I started programming in high school, I was always striving to explore new tools and technologies, from individual technical endeavours, to collaborative hackathon projects, to work experience in industry. Feel free to check out my <a
         className='text-link'
         target="_blank"
         rel="noopener noreferrer"
