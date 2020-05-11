@@ -34,7 +34,7 @@ export const ITEMSLIST = [
         icon: "color-fast-tap-icon.webp",
         title: "Tappa Dabba",
         subtitle: "An intense rhythmic dancing mobile game.",
-        text: "Put your dancing skills to the test with this intense rhythmic game! Match the correct color to perform a specific dance move, and combine dance moves to create combos and increase you dancing streak! Be sure not to miss a step!",
+        text: "Put your dancing skills to the test with this intense rhythmic game! Match the correct color to perform a specific dance move, and combine dance moves to create combos and increase your dancing streak! Be sure not to miss a step!",
         linkDictList: [
             {
                 icon: faGooglePlay,
