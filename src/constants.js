@@ -129,7 +129,7 @@ export const ITEMSLIST = [
     {
         icon: "color-fast-tap-icon.webp",
         title: "Main Mall Hustle",
-        subtitle: "A educational virtual reality mobile game for Google Cardboard.",
+        subtitle: "An educational virtual reality mobile game for Google Cardboard.",
         text: "Hurry across campus while picking up coffee and dodging classmates to get to your next class! Be quick, or you'll be late! Designed to help new students become familiarized with UBC through an interactive and accessible virtual reality game.",
         linkDictList: [
             {
