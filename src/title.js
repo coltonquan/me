@@ -16,7 +16,7 @@ export class Title extends React.Component {
                             <hr></hr>
                             <h2>{this.props.subtitle}</h2>
                             <div style={{ marginTop: '52px' }} ></div>
-                            <h2 style={{ color: 'lightblue' }} >I'm currently seeking Summer 2021 internships! Feel free to check out my
+                            <h2 style={{ color: 'lightblue' }} >I'm currently seeking full time employment! Feel free to check out my
                                 <a
                                     className='title-link'
                                     target="_blank"

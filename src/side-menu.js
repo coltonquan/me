@@ -98,7 +98,7 @@ export class SideMenu extends React.Component {
                     </div>
                     <SideMenuItem name='Web Extensions' onClick={this.onClickEntry} entries={['Webbie', 'Calendar Notes']} />
                     <SideMenuItem name='Virtual Reality' onClick={this.onClickEntry} entries={['Main Mall Hustle', 'Dream Not Scream']} />
-                    <SideMenuItem name='Work Experience' onClick={this.onClickEntry} entries={['Zynga', 'FISPAN', 'Visier', 'UBC']} />
+                    <SideMenuItem name='Work Experience' onClick={this.onClickEntry} entries={['Amazon', 'Zynga', 'FISPAN', 'Visier', 'UBC']} />
                     <Link
                         to='About'
                         smooth={true}

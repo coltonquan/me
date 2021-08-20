@@ -153,6 +153,14 @@ export const ITEMSLIST = [
 
 
   {
+    title: "Amazon",
+    subtitle: "Software Developer Intern (May - Jul 2021)",
+    text: <div>I had the opportunity to intern with the Payment Preferences team based in Amazon's Vancouver office. Unlike my previous internships, I was tasked with a project which lasted the duration of my internship, which involved designing and implementing a workflow to increase the usage of payment preferences when customers make purchases. This was the first time I took complete ownership of a feature, and I gained exposure with creating and evaluating high-level designs, as well as developing at such a large scale. Overall, it was a great experience working at Amazon.   </div>,
+    linkDictList: [
+    ],
+    media: "amazon.png",
+  },
+  {
     title: "Zynga",
     subtitle: "Software Developer Intern (Apr - Aug 2020)",
     text: <div><a className='text-link' target="_blank" rel="noopener noreferrer" href='https://zynga.com/'>Zynga</a> is a globally renowned game development company, and I had the opportunity to work on Zynga's most popular game, <a className='text-link' target="_blank" rel="noopener noreferrer" href='https://www.zynga.com/games/words-with-friends-2/'>Words with Friends 2</a>. I helped develop many features for the popular mobile word game, as well as improve and optimize various internal developer tools. Although my internship was a remote position, I still gained a lot of technical experience with mobile development and met a lot of great people.</div>,
@@ -192,13 +200,13 @@ export const ITEMSLIST = [
 
 export const TITLE = {
   title: "Hi, I'm Colton",
-  subtitle: "3rd year computer science major, loves programming, and always looking for opportunities!",
+  subtitle: "4th year computer science major, loves programming, and always looking for opportunities!",
 }
 
 export const ABOUT = {
   title: "About Me",
   subtitle: "Self-driven, eager to learn, and passionate about computer science.",
-  text: <div>Hello! I'm a 3rd year computer science student at UBC, from Vancouver, Canada. Ever since I started programming in high school, I was always striving to explore new tools and technologies, from individual technical endeavours, to collaborative hackathon projects, to work experience in industry. Feel free to check out my <a
+  text: <div>Hello! I'm a 4th year computer science student at UBC, from Vancouver, Canada. Ever since I started programming in high school, I was always striving to explore new tools and technologies, from individual technical endeavours, to collaborative hackathon projects, to work experience in industry. Feel free to check out my <a
     className='text-link'
     target="_blank"
     rel="noopener noreferrer"
