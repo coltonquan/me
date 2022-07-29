@@ -15,7 +15,7 @@ export class Title extends React.Component {
                             <div style={{ marginTop: '52px' }} ></div>
                             <hr></hr>
                             <h2>{this.props.subtitle}</h2>
-                            <div style={{ marginTop: '52px' }} ></div>
+                            {/* <div style={{ marginTop: '52px' }} ></div>
                             <h2 style={{ color: 'lightblue' }} >I'm currently seeking full time employment! Feel free to check out my
                                 <a
                                     className='title-link'
@@ -26,7 +26,7 @@ export class Title extends React.Component {
                                     className='title-link'
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    href='https://www.linkedin.com/in/coltonquan' > LinkedIn</a> if you want to chat!</h2>
+                                    href='https://www.linkedin.com/in/coltonquan' > LinkedIn</a> if you want to chat!</h2> */}
                         </Element>
                     </div>
                 </div>
